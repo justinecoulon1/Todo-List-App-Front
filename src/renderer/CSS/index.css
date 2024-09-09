@@ -1,0 +1,166 @@
+body {
+    background-color: #F7E0D2;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.title-bar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #64303e;
+    border: 5px solid transparent;
+    padding: 0px;
+    position: fixed;
+    align-items: center;
+    top: 0;
+}
+
+.title-bar-container {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title-bar-text {
+    display: flex;
+    align-items: center;
+    color: #FBF6E4;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-menu-button-image {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    background-color: #6E122D;
+    border: 3px solid #52081E;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.nav-menu-button-image:hover {
+    background-color: #86213f;
+}
+
+.nav-menu {
+    background-color: #E3C3B9;
+    width: 160px;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    transition: 50ms;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 450ms;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #E3C3B9;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-menu-image {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #6E122D;
+    border: 3px solid #52081E;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+li a {
+    color: #5B0315;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d3b1a7;
+}
+
+.nav-menu-link.active {
+    background-color: #d3b1a7;
+}
+
+.nav-menu-link {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.create-todo-button-image {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #6E122D;
+    border: 3px solid #FBF6E4;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.create-todo-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.create-todo-button {
+    background-color: #6E122D;
+    border: 3px solid #52081E;
+    border-radius: 5px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    color: #FBF6E4 ; 
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+
+.create-todo-button:hover {
+    background-color: #86213f;
+}
