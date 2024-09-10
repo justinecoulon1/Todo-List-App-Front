@@ -5,11 +5,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Statistics } from './pages/statistics';
 import { Settings } from './pages/settings';
+import { SidebarProvider } from './renderer/react/contexts/sidebar-context';
+import { Sidebar } from './renderer/react/general/sidebar';
 
-function PageContent({children}) {
+function PageContent({ children }) {
         return (
                 <div>
-                        <TitleBar />
+                        <SidebarProvider>
+                                <TitleBar />
+                                <Sidebar />
+                        </SidebarProvider>
                         {children}
                 </div>
         )
@@ -18,7 +23,7 @@ function PageContent({children}) {
 const router = createBrowserRouter([
         {
                 path: "/main_window",
-                element: (<PageContent><Home/></PageContent>),
+                element: (<PageContent><Home /></PageContent>),
         },
         {
                 path: "/statistics",
