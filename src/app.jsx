@@ -7,6 +7,7 @@ import { Statistics } from './pages/statistics';
 import { Settings } from './pages/settings';
 import { SidebarProvider } from './renderer/react/contexts/sidebar-context';
 import { Sidebar } from './renderer/react/general/sidebar';
+import { TodoList } from './pages/todo-list';
 
 function PageContent({ children }) {
         return (
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         {
                 path: "/settings",
                 element: (<PageContent children={<Settings />} />),
+        },
+        {
+                path: "/todo-list/:id",
+                element: (<PageContent children={<TodoList />} />),
         },
 ]);
 

@@ -42,7 +42,7 @@ export function Sidebar() {
 
 function SideBarLink({ linkTo, linkName, linkImage }) {
     const currentRoute = useLocation().pathname
-    const className = currentRoute === linkTo ? "nav-menu-link active" : "nav-menu-link"
+    const className = currentRoute === linkTo ? "nav-menu-link active unselectable" : "nav-menu-link unselectable"
     return (
         <Link class={className} to={linkTo}>
             <img src={linkImage} alt="menu_item" className="nav-menu-image" />{linkName}

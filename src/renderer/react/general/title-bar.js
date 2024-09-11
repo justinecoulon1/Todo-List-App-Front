@@ -6,9 +6,9 @@ import { useSidebarContext } from "../contexts/sidebar-context";
 export function TitleBar() {
     const { isOpened, setIsOpened } = useSidebarContext()
     return (
-        <section class="title-bar">
+        <section class="title-bar unselectable">
             <div class="title-bar-container">
-                <img src={menuButtonImage} alt="menu" className="nav-menu-button-image clickable" onClick={() => setIsOpened(!isOpened)} />
+                <img src={menuButtonImage} alt="menu" className="nav-menu-button-image clickable hoverable-button" onClick={() => setIsOpened(!isOpened)} />
                 <img src={todoListLogo} alt="logo" className="logo-image" />
                 <div class="title-bar-text">Todo List App</div>
             </div>
