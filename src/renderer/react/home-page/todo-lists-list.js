@@ -1,6 +1,6 @@
 import * as React from "react";
 import todoListTypeImg from "/src/img/normal_todo.png"
-import { useTodoListsContext } from "../contexts/todo-lists-context";
+import { useTodoListsContext } from "../contexts/todo-list-context";
 import { useNavigate } from "react-router-dom";
 
 export function TodoListsList() {
@@ -29,4 +29,3 @@ function TodoListCard({ todoList }) {
         });
     }
 }
-

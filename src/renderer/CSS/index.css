@@ -143,6 +143,15 @@ li a:hover {
     align-items: center;
 }
 
+.create-element-button-container {
+    display: flex;
+    height: 50px;
+    padding: 0px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 .create-todo-button-image {
     background-color: #6E122D;
     border: 3px solid #FBF6E4;
@@ -226,24 +235,23 @@ li a:hover {
 }
 
 .edit-button-image {
-    background-color: #6E122D;
-    border: 3px solid #52081E;
-    border-radius: 5px;
-    width: 15px;
-    height: 15px;
     margin: 5px 5px 5px 5px;
-    padding: 3px;
-    align-items: center;
-    -webkit-user-drag: none;
 }
 
 .open-button-image {
+    margin: 0px 5px 5px 5px;
+}
+
+.validate-button-image {
+    margin: 5px 5px 5px 5px;
+}
+
+.header-button {
     background-color: #6E122D;
     border: 3px solid #52081E;
     border-radius: 5px;
     width: 15px;
     height: 15px;
-    margin: 0px 5px 5px 5px;
     padding: 3px;
     align-items: center;
     -webkit-user-drag: none;
@@ -259,11 +267,7 @@ li a:hover {
     align-items: center;
 }
 
-.todo-list-name-form {
-    display: flex;
-}
-
-.header-container-right-side {
+.header-container-left-side {
     display: flex;
     background-color: #E3C3B9;
     height: 70px;
@@ -272,7 +276,7 @@ li a:hover {
     align-items: center;
 }
 
-.header-container-left-side {
+.header-container-right-side {
     display: flex;
     flex-direction: column;
     background-color: #E3C3B9;
@@ -287,6 +291,7 @@ li a:hover {
 }
 
 .todo-list-name-form {
+    display: flex;
     background-color: #ecd7d1;
     border: 3px solid #d3b1a7;
     border-radius: 5px;

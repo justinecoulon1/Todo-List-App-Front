@@ -1,7 +1,7 @@
 import * as React from "react";
 import { CreateTodoListButton } from "../renderer/react/home-page/create-todo-list-button";
 import { TodoListsList } from "../renderer/react/home-page/todo-lists-list";
-import { TodoListProvider } from "../renderer/react/contexts/todo-lists-context";
+import { TodoListProvider } from "../renderer/react/contexts/todo-list-context";
 
 export function Home() {
     return (
